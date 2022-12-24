@@ -12,7 +12,9 @@ class NavBar extends StatelessWidget {
           UserAccountsDrawerHeader(
             accountName: Text('WeSummarizeText'),
             accountEmail: Text('wesummarizetext@gmail.com'),
-            currentAccountPicture: CircleAvatar(),
+            currentAccountPicture: CircleAvatar(
+              backgroundImage: AssetImage('assests/person.png'),
+            ),
             decoration: BoxDecoration(
               color: Colors.teal[600],
             ),
