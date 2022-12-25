@@ -3,9 +3,6 @@ import 'package:nepalitextsummarizer/aboutUs.dart';
 import 'main.dart';
 import 'aboutUs.dart';
 import 'contact.dart';
-import 'FAQ.dart';
-import 'help.dart';
-import 'Settings.dart';
 
 class NavBar extends StatelessWidget {
   @override
@@ -36,7 +33,7 @@ class NavBar extends StatelessWidget {
               }),
           ListTile(
               leading: Icon(Icons.description),
-              title: Text('About Us'),
+              title: Text('About'),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.of(context).push(MaterialPageRoute(
@@ -44,35 +41,8 @@ class NavBar extends StatelessWidget {
                 ));
               }),
           ListTile(
-              leading: Icon(Icons.settings),
-              title: Text('Settings'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Settings(),
-                ));
-              }),
-          ListTile(
-              leading: Icon(Icons.question_answer),
-              title: Text('FAQ'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Faq(),
-                ));
-              }),
-          ListTile(
-              leading: Icon(Icons.help),
-              title: Text('Help'),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Help(),
-                ));
-              }),
-          ListTile(
               leading: Icon(Icons.contact_page),
-              title: Text('Contact us'),
+              title: Text('Contact Us'),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.of(context).push(MaterialPageRoute(
