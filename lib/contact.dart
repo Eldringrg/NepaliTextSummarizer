@@ -20,12 +20,12 @@ class Contact extends StatelessWidget {
               child: Text(
                 'BCT MAJOR PROJECT TEAM',
                 style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                     color: Colors.teal[600]),
               ),
             ),
-            margin: EdgeInsets.only(top: 170),
+            margin: EdgeInsets.only(top: 50),
           ),
           Container(
             child: Center(
