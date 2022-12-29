@@ -7,14 +7,14 @@ class AboutUs extends StatelessWidget {
         appBar: AppBar(
             backgroundColor: Colors.teal[600],
             title: Container(
-              width: double.infinity,
+              width: 280,
               child: Text(
-                'About Us',
+                'About ',
                 textAlign: TextAlign.center,
               ),
             )),
         body: Column(
-          children: [
+          children: <Widget>[
             Container(
                 margin:
                     EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 20),

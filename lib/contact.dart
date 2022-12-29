@@ -7,7 +7,7 @@ class Contact extends StatelessWidget {
       appBar: AppBar(
           backgroundColor: Colors.teal[600],
           title: Container(
-            width: double.infinity,
+            width: 280,
             child: Text(
               'Contact Us',
               textAlign: TextAlign.center,
@@ -25,60 +25,110 @@ class Contact extends StatelessWidget {
                     color: Colors.teal[600]),
               ),
             ),
-            margin: EdgeInsets.only(top: 50),
+            margin: EdgeInsets.only(top: 40),
+            padding: EdgeInsets.only(left: 5),
           ),
           Container(
             child: Center(
               child: Text('Lamachaur,Pokhara-16',
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.grey)),
+                  style: TextStyle(fontSize: 20, color: Colors.grey)),
             ),
-            margin: EdgeInsets.only(top: 10, bottom: 5),
+            margin: EdgeInsets.only(top: 20, bottom: 10),
           ),
           Container(
             child: Center(
-              child: Text('Email:eldrintamu3@gmail.com',
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.grey)),
+              child: Text(
+                'Eldrin',
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+            ),
+            margin: EdgeInsets.only(top: 10, bottom: 5),
+            padding: EdgeInsets.only(right: 290),
+          ),
+          Container(
+            child: Center(
+              child: Text(
+                'E-mail:eldrintamu3@gmail.com',
+                style: TextStyle(fontSize: 20, color: Colors.grey),
+              ),
+            ),
+            margin: EdgeInsets.only(top: 10, bottom: 5),
+            padding: EdgeInsets.only(right: 35),
+          ),
+          Container(
+            child: Center(
+              child: Text(
+                'Prashant',
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+            ),
+            margin: EdgeInsets.only(top: 10, bottom: 5),
+            padding: EdgeInsets.only(right: 250),
+          ),
+          Container(
+            child: Center(
+              child: Text('E-mail:prashantpant809@gmail.com',
+                  style: TextStyle(fontSize: 20, color: Colors.grey)),
+            ),
+            margin: EdgeInsets.only(top: 10, bottom: 10),
+            padding: EdgeInsets.only(left: 20),
+          ),
+          Container(
+            child: Center(
+              child: Text(
+                'Bidhya',
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+            ),
+            margin: EdgeInsets.only(top: 10, bottom: 5),
+            padding: EdgeInsets.only(right: 270),
+          ),
+          Container(
+            child: Center(
+              child: Text('E-mail:bidhyapoudel436@gmail.com',
+                  style: TextStyle(fontSize: 20, color: Colors.grey)),
+            ),
+            margin: EdgeInsets.only(top: 10, bottom: 5),
+            padding: EdgeInsets.only(left: 25),
+          ),
+          Container(
+            child: Center(
+              child: Text(
+                'Rasmi',
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+            ),
+            margin: EdgeInsets.only(top: 10, bottom: 5),
+            padding: EdgeInsets.only(right: 270),
+          ),
+          Container(
+            child: Center(
+              child: Text(
+                'E-mail:bhattarairasmi72@gmail.com',
+                style: TextStyle(fontSize: 20, color: Colors.grey),
+              ),
+            ),
+            margin: EdgeInsets.only(top: 10, bottom: 10),
+            padding: EdgeInsets.only(left: 27),
+          ),
+          Container(
+            child: Center(
+              child: Text(
+                '[Credits]',
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
             ),
             margin: EdgeInsets.only(top: 10, bottom: 5),
             padding: EdgeInsets.only(right: 22),
           ),
           Container(
             child: Center(
-              child: Text('Email:prashantpant809@gmail.com',
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.grey)),
-            ),
-            margin: EdgeInsets.only(top: 10, bottom: 10),
-            padding: EdgeInsets.only(left: 20),
-          ),
-          Container(
-              child: Center(
-            child: Text('Email:bidhyapoudel2@gmail.com',
-                style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.grey)),
-          )),
-          Container(
-            child: Center(
               child: Text(
-                'Email:rasmibhattrai@gmail.com',
-                style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.grey),
+                'Supervisior:Er.Nabin Lamichhane',
+                style: TextStyle(fontSize: 20, color: Colors.grey),
               ),
             ),
-            margin: EdgeInsets.only(top: 10, bottom: 10),
-            padding: EdgeInsets.only(right: 12),
+            margin: EdgeInsets.only(top: 10, bottom: 5),
           ),
         ],
       ),
