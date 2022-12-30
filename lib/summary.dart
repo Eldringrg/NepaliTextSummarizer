@@ -22,11 +22,11 @@ class Summary extends StatelessWidget {
           margin: EdgeInsets.only(
             left: 40,
             right: 40,
-            top: 40,
+            top: 50,
             bottom: 40,
           ),
           child: Container(
-            height: double.infinity,
+            height: 600,
             width: double.infinity,
             child: Text(
               SummaryContent,
