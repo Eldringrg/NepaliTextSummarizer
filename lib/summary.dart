@@ -26,6 +26,8 @@ class Summary extends StatelessWidget {
             bottom: 40,
           ),
           child: Container(
+            height: double.infinity,
+            width: double.infinity,
             child: Text(
               SummaryContent,
               textAlign: TextAlign.justify,
