@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './summary.dart';
 
 class Summarize extends StatefulWidget {
   @override
@@ -6,8 +7,8 @@ class Summarize extends StatefulWidget {
 }
 
 class _SummarizeState extends State<Summarize> {
-  final titleController = TextEditingController();
-  String summary = '';
+  String summary;
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -24,7 +25,9 @@ class _SummarizeState extends State<Summarize> {
               ),
               hintText: 'Enter/Paste Nepali Text',
             ),
-            controller: titleController,
+            onChanged: (text) {
+              summary = text;
+            },
             keyboardType: TextInputType.multiline,
           ),
           margin: EdgeInsets.only(top: 30, left: 35, right: 30, bottom: 10),
@@ -33,9 +36,11 @@ class _SummarizeState extends State<Summarize> {
           child: ElevatedButton(
             child: Text('SUMMARIZE'),
             onPressed: () {
-              setState(() {
-                summary = titleController.text;
-              });
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => Summary(SummaryContent: summary),
+                ),
+              );
             },
             style: ElevatedButton.styleFrom(
               primary: Colors.teal[600],
@@ -47,25 +52,6 @@ class _SummarizeState extends State<Summarize> {
           ),
           margin: EdgeInsets.only(left: 10, top: 15),
         ),
-        Divider(),
-        Container(
-          child: Text('Summarized Content:',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
-          margin: EdgeInsets.only(
-            top: 20,
-            left: 20,
-          ),
-        ),
-        Card(
-          elevation: 2,
-          margin: EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
-          child: Container(
-            padding: EdgeInsets.all(20),
-            child: Center(
-              child: Text(summary),
-            ),
-          ),
-        )
       ],
     ));
   }
