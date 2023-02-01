@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import './main.dart';
-import './aboutUs.dart';
-import './contact.dart';
+import '../main.dart';
+import 'aboutUs.dart';
+import 'contact.dart';
 
 class NavBar extends StatelessWidget {
   @override

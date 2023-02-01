@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './summary.dart';
+import 'summary.dart';
 
 class Summarize extends StatefulWidget {
   @override
