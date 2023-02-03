@@ -38,32 +38,11 @@ class Contact extends StatelessWidget {
           Container(
             child: Center(
               child: Text(
-                'Eldrin',
-                style: TextStyle(fontSize: 20, color: Colors.black),
-              ),
-            ),
-            margin: EdgeInsets.only(top: 10, bottom: 5),
-            padding: EdgeInsets.only(right: 290),
-          ),
-          Container(
-            child: Center(
-              child: Text(
-                'E-mail:eldrintamu3@gmail.com',
-                style: TextStyle(fontSize: 20, color: Colors.grey),
-              ),
-            ),
-            margin: EdgeInsets.only(top: 10, bottom: 5),
-            padding: EdgeInsets.only(right: 35),
-          ),
-          Container(
-            child: Center(
-              child: Text(
                 'Prashant',
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
-            margin: EdgeInsets.only(top: 10, bottom: 5),
-            padding: EdgeInsets.only(right: 250),
+
           ),
           Container(
             child: Center(
@@ -76,12 +55,31 @@ class Contact extends StatelessWidget {
           Container(
             child: Center(
               child: Text(
+                'Eldrin',
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
+            ),
+
+          ),
+          Container(
+            child: Center(
+              child: Text(
+                'E-mail:eldrintamu3@gmail.com',
+                style: TextStyle(fontSize: 20, color: Colors.grey),
+              ),
+            ),
+            margin: EdgeInsets.only(top: 10, bottom: 5),
+            padding: EdgeInsets.only(right: 28),
+          ),
+
+          Container(
+            child: Center(
+              child: Text(
                 'Bidhya',
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
-            margin: EdgeInsets.only(top: 10, bottom: 5),
-            padding: EdgeInsets.only(right: 270),
+
           ),
           Container(
             child: Center(
@@ -98,8 +96,7 @@ class Contact extends StatelessWidget {
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
-            margin: EdgeInsets.only(top: 10, bottom: 5),
-            padding: EdgeInsets.only(right: 270),
+
           ),
           Container(
             child: Center(
@@ -118,8 +115,6 @@ class Contact extends StatelessWidget {
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
-            margin: EdgeInsets.only(top: 10, bottom: 5),
-            padding: EdgeInsets.only(right: 22),
           ),
           Container(
             child: Center(

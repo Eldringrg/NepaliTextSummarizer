@@ -31,7 +31,7 @@ class NavBar extends StatelessWidget {
                 ));
               }),
           ListTile(
-              leading: Icon(Icons.description),
+              leading: Icon(Icons.info_rounded),
               title: Text('About'),
               onTap: () {
                 Navigator.pop(context);
@@ -40,7 +40,7 @@ class NavBar extends StatelessWidget {
                 ));
               }),
           ListTile(
-              leading: Icon(Icons.contact_page),
+              leading: Icon(Icons.contacts),
               title: Text('Contact Us'),
               onTap: () {
                 Navigator.pop(context);
