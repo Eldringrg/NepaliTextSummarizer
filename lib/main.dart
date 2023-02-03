@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'widgets/NavBar.dart';
-import 'widgets/summarize.dart';
+import './widgets/NavBar.dart';
+import './widgets/summarize.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.teal[600],
               title: Container(
                 width: 280,
-                child: Text(
+                child: const Text(
                   'Nepali Text Summarizer',
                   textAlign: TextAlign.center,
                 ),

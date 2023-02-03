@@ -9,7 +9,7 @@ class Summary extends StatelessWidget {
           backgroundColor: Colors.teal[600],
           title: Container(
               width: 280,
-              child: Text(
+              child: const Text(
                 'Summary',
                 textAlign: TextAlign.center,
               ))),

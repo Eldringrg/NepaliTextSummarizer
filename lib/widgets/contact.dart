@@ -8,7 +8,7 @@ class Contact extends StatelessWidget {
           backgroundColor: Colors.teal[600],
           title: Container(
             width: 280,
-            child: Text(
+            child: const Text(
               'Contact Us',
               textAlign: TextAlign.center,
             ),
@@ -30,23 +30,22 @@ class Contact extends StatelessWidget {
           ),
           Container(
             child: Center(
-              child: Text('Lamachaur,Pokhara-16',
+              child: const Text('Lamachaur,Pokhara-16',
                   style: TextStyle(fontSize: 20, color: Colors.grey)),
             ),
             margin: EdgeInsets.only(top: 20, bottom: 10),
           ),
           Container(
             child: Center(
-              child: Text(
+              child: const Text(
                 'Prashant',
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
-
           ),
           Container(
             child: Center(
-              child: Text('E-mail:prashantpant809@gmail.com',
+              child: const Text('E-mail:prashantpant809@gmail.com',
                   style: TextStyle(fontSize: 20, color: Colors.grey)),
             ),
             margin: EdgeInsets.only(top: 10, bottom: 10),
@@ -54,16 +53,15 @@ class Contact extends StatelessWidget {
           ),
           Container(
             child: Center(
-              child: Text(
+              child: const Text(
                 'Eldrin',
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
-
           ),
           Container(
             child: Center(
-              child: Text(
+              child: const Text(
                 'E-mail:eldrintamu3@gmail.com',
                 style: TextStyle(fontSize: 20, color: Colors.grey),
               ),
@@ -71,19 +69,17 @@ class Contact extends StatelessWidget {
             margin: EdgeInsets.only(top: 10, bottom: 5),
             padding: EdgeInsets.only(right: 28),
           ),
-
           Container(
             child: Center(
-              child: Text(
+              child: const Text(
                 'Bidhya',
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
-
           ),
           Container(
             child: Center(
-              child: Text('E-mail:bidhyapoudel436@gmail.com',
+              child: const Text('E-mail:bidhyapoudel436@gmail.com',
                   style: TextStyle(fontSize: 20, color: Colors.grey)),
             ),
             margin: EdgeInsets.only(top: 10, bottom: 5),
@@ -91,16 +87,15 @@ class Contact extends StatelessWidget {
           ),
           Container(
             child: Center(
-              child: Text(
+              child: const Text(
                 'Rasmi',
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
-
           ),
           Container(
             child: Center(
-              child: Text(
+              child: const Text(
                 'E-mail:bhattarairasmi72@gmail.com',
                 style: TextStyle(fontSize: 20, color: Colors.grey),
               ),
@@ -110,7 +105,7 @@ class Contact extends StatelessWidget {
           ),
           Container(
             child: Center(
-              child: Text(
+              child: const Text(
                 '[Credits]',
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
@@ -118,7 +113,7 @@ class Contact extends StatelessWidget {
           ),
           Container(
             child: Center(
-              child: Text(
+              child: const Text(
                 'Supervisior:Er.Nabin Lamichhane',
                 style: TextStyle(fontSize: 20, color: Colors.grey),
               ),

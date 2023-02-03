@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../main.dart';
-import 'aboutUs.dart';
-import 'contact.dart';
+import './aboutUs.dart';
+import './contact.dart';
 
 class NavBar extends StatelessWidget {
   @override
@@ -12,8 +12,8 @@ class NavBar extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            accountName: Text('WeSummarizeText'),
-            accountEmail: Text('wesummarizetext@gmail.com'),
+            accountName: const Text('WeSummarizeText'),
+            accountEmail: const Text('wesummarizetext@gmail.com'),
             currentAccountPicture: CircleAvatar(
               backgroundImage: AssetImage('assests/person.png'),
             ),
@@ -23,7 +23,7 @@ class NavBar extends StatelessWidget {
           ),
           ListTile(
               leading: Icon(Icons.home),
-              title: Text('Home'),
+              title: const Text('Home'),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.of(context).push(MaterialPageRoute(
@@ -32,7 +32,7 @@ class NavBar extends StatelessWidget {
               }),
           ListTile(
               leading: Icon(Icons.info_rounded),
-              title: Text('About'),
+              title: const Text('About'),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.of(context).push(MaterialPageRoute(
@@ -41,7 +41,7 @@ class NavBar extends StatelessWidget {
               }),
           ListTile(
               leading: Icon(Icons.contacts),
-              title: Text('Contact Us'),
+              title: const Text('Contact Us'),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.of(context).push(MaterialPageRoute(

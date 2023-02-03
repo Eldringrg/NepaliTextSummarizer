@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'summary.dart';
+import './summary.dart';
 
 class Summarize extends StatefulWidget {
   @override
@@ -34,7 +34,7 @@ class _SummarizeState extends State<Summarize> {
         ),
         Container(
           child: ElevatedButton(
-            child: Text('SUMMARIZE'),
+            child: const Text('SUMMARIZE'),
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
