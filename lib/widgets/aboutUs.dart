@@ -8,7 +8,7 @@ class AboutUs extends StatelessWidget {
             backgroundColor: Colors.teal[600],
             title: Container(
               width: 280,
-              child: Text(
+              child: const Text(
                 'About ',
                 textAlign: TextAlign.center,
               ),
