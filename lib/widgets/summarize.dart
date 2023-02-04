@@ -7,7 +7,7 @@ class Summarize extends StatefulWidget {
 }
 
 class _SummarizeState extends State<Summarize> {
-  String summary;
+  String summary = '';
 
   @override
   Widget build(BuildContext context) {

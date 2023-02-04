@@ -14,10 +14,11 @@ class Summary extends StatelessWidget {
                 textAlign: TextAlign.center,
               ))),
       body: Card(
+          elevation: 4,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
               side: BorderSide(
-                color: Colors.teal[100],
+                color: Colors.teal[600],
               )),
           margin: EdgeInsets.only(
             left: 40,
