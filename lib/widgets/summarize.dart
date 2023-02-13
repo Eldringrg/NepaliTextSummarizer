@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import '../function.dart';
 import './summary.dart';
 
 class Summarize extends StatefulWidget {
@@ -7,7 +10,9 @@ class Summarize extends StatefulWidget {
 }
 
 class _SummarizeState extends State<Summarize> {
-  String summary = '';
+  String url = '';
+  var data;
+  String output = 'Initial Output';
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +31,7 @@ class _SummarizeState extends State<Summarize> {
               hintText: 'Enter/Paste Nepali Text',
             ),
             onChanged: (text) {
-              summary = text;
+              url = 'http://10.0.2.2:5000/api?query=' + text.toString();
             },
             keyboardType: TextInputType.multiline,
           ),
@@ -35,10 +40,15 @@ class _SummarizeState extends State<Summarize> {
         Container(
           child: ElevatedButton(
             child: const Text('SUMMARIZE'),
-            onPressed: () {
+            onPressed: () async {
+              data = await (fetchdata(url));
+              var decoded = jsonDecode(data);
+              setState(() {
+                output = decoded['output'];
+              });
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => Summary(SummaryContent: summary),
+                  builder: (context) => Summary(SummaryContent: output),
                 ),
               );
             },
