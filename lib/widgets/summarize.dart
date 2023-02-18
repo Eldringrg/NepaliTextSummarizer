@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import '../function.dart';
 import './summary.dart';
@@ -13,6 +12,7 @@ class _SummarizeState extends State<Summarize> {
   String url = '';
   var data;
   String output = 'Initial Output';
+  String _enteredText = '';
 
   @override
   Widget build(BuildContext context) {
@@ -24,16 +24,19 @@ class _SummarizeState extends State<Summarize> {
             cursorColor: Colors.teal[600],
             minLines: 23,
             maxLines: null,
-            decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(20.0),
-              ),
-              hintText: 'Enter/Paste Nepali Text',
-            ),
             onChanged: (text) {
+              setState(() {
+                _enteredText = text;
+              });
               url = 'http://10.0.2.2:5000/api?query=' + text.toString();
             },
             keyboardType: TextInputType.multiline,
+            decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                hintText: 'Enter/Paste Nepali Text',
+                counterText: '${_enteredText.length.toString()} character(s)'),
           ),
           margin: EdgeInsets.only(top: 30, left: 35, right: 30, bottom: 10),
         ),
