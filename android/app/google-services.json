@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "763713449491",
+    "project_id": "nepali-text-summarizer-51a83",
+    "storage_bucket": "nepali-text-summarizer-51a83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763713449491:android:92f6aebc583eec423b59e6",
+        "android_client_info": {
+          "package_name": "com.example.nepalitextsummarizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763713449491-3jgsfmvsb31sc0e5btqtgm36cfvtbunc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS-jfwqFXicUYcpRFdndU9LPmOXahxyvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763713449491-3jgsfmvsb31sc0e5btqtgm36cfvtbunc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

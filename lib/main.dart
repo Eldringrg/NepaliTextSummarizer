@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './widgets/NavBar.dart';
-import './widgets/summarize.dart';
+import 'screens/summarize.dart';
 
 void main() {
   runApp(MyApp());
