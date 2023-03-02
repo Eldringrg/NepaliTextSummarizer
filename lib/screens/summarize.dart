@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import '../function.dart';
-import 'summary.dart';
+import './summary.dart';
 
 class Summarize extends StatefulWidget {
   @override
@@ -13,7 +13,6 @@ class _SummarizeState extends State<Summarize> {
   var data;
   String output = 'Initial Output';
   String _enteredText = '';
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -49,11 +48,8 @@ class _SummarizeState extends State<Summarize> {
               setState(() {
                 output = decoded['output'];
               });
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => Summary(SummaryContent: output),
-                ),
-              );
+              Navigator.of(context)
+                  .pushNamed(Summary.routeName, arguments: {'output': output});
             },
             style: ElevatedButton.styleFrom(
               primary: Colors.teal[600],

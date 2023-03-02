@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Summary extends StatelessWidget {
-  final SummaryContent;
-  Summary({this.SummaryContent});
+  static const routeName = '/summary';
   Widget build(BuildContext context) {
+    final routeArgs =
+        ModalRoute.of(context).settings.arguments as Map<String, String>;
+    final SummaryContent = routeArgs['output'];
+
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.teal[600],

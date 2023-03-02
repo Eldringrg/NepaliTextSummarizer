@@ -26,27 +26,21 @@ class NavBar extends StatelessWidget {
               title: const Text('Home'),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => MyApp(),
-                ));
+                Navigator.of(context).pushNamed(MyApp.routeName);
               }),
           ListTile(
               leading: Icon(Icons.info_rounded),
               title: const Text('About'),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => AboutUs(),
-                ));
+                Navigator.of(context).pushNamed(AboutUs.routeName);
               }),
           ListTile(
               leading: Icon(Icons.contacts),
               title: const Text('Contact Us'),
               onTap: () {
                 Navigator.pop(context);
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => Contact(),
-                ));
+                Navigator.of(context).pushNamed(Contact.routeName);
               }),
         ],
       ),

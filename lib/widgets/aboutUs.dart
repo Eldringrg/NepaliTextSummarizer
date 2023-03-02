@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AboutUs extends StatelessWidget {
+  static const routeName = '/aboutUs';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
