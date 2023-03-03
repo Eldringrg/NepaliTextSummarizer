@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../main.dart';
 import './aboutUs.dart';
 import './contact.dart';
+import './settings.dart';
 
 class NavBar extends StatelessWidget {
   @override
@@ -34,6 +35,13 @@ class NavBar extends StatelessWidget {
               onTap: () {
                 Navigator.pop(context);
                 Navigator.of(context).pushNamed(AboutUs.routeName);
+              }),
+          ListTile(
+              leading: Icon(Icons.settings),
+              title: const Text('Settings'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.of(context).pushNamed(Settings.routeName);
               }),
           ListTile(
               leading: Icon(Icons.contacts),
