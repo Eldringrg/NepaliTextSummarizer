@@ -15,7 +15,8 @@ class AboutUs extends StatelessWidget {
                 style: TextStyle(fontFamily: 'OpenSans'),
               ),
             )),
-        body: Column(
+        body: SingleChildScrollView(
+            child: Column(
           children: <Widget>[
             Container(
                 margin:
@@ -71,6 +72,6 @@ class AboutUs extends StatelessWidget {
                       ],
                     ))),
           ],
-        ));
+        )));
   }
 }
