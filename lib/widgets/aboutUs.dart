@@ -12,6 +12,7 @@ class AboutUs extends StatelessWidget {
               child: const Text(
                 'About ',
                 textAlign: TextAlign.center,
+                style: TextStyle(fontFamily: 'OpenSans'),
               ),
             )),
         body: Column(
@@ -28,6 +29,7 @@ class AboutUs extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                             color: Colors.teal[600],
+                            fontFamily: 'Montserrat',
                           )),
                       TextSpan(
                         text:
@@ -35,6 +37,7 @@ class AboutUs extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.grey,
+                          fontFamily: 'OpenSans',
                         ),
                       ),
                     ]))),
@@ -51,6 +54,7 @@ class AboutUs extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 20,
                               color: Colors.grey,
+                              fontFamily: 'OpenSans',
                             )),
                         TextSpan(
                           text: ' • Prashant Pant'
@@ -58,9 +62,11 @@ class AboutUs extends StatelessWidget {
                               '  • Bidhya Poudel'
                               '  • Eldrin Gurung.',
                           style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.teal[600]),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.teal[600],
+                            fontFamily: 'Montserrat',
+                          ),
                         ),
                       ],
                     ))),

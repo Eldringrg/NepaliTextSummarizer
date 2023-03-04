@@ -15,6 +15,7 @@ class Summary extends StatelessWidget {
               child: const Text(
                 'Summary',
                 textAlign: TextAlign.center,
+                style: TextStyle(fontFamily: 'OpenSans'),
               ))),
       body: Card(
           elevation: 4,

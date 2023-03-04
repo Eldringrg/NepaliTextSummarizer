@@ -21,7 +21,7 @@ class _SummarizeState extends State<Summarize> {
         Container(
           child: TextField(
             cursorColor: Colors.teal[600],
-            minLines: 23,
+            minLines: 28,
             maxLines: null,
             onChanged: (text) {
               setState(() {
@@ -41,7 +41,10 @@ class _SummarizeState extends State<Summarize> {
         ),
         Container(
           child: ElevatedButton(
-            child: const Text('SUMMARIZE'),
+            child: const Text(
+              'SUMMARIZE',
+              style: TextStyle(fontFamily: 'OpenSans'),
+            ),
             onPressed: () async {
               data = await (fetchdata(url));
               var decoded = jsonDecode(data);

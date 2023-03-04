@@ -1,4 +1,3 @@
-// ignore_for_file: use_key_in_widget_constructors
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './widgets/contact.dart';
@@ -48,6 +47,7 @@ class MyApp extends StatelessWidget {
                     child: const Text(
                       'Nepali Text Summarizer',
                       textAlign: TextAlign.center,
+                      style: TextStyle(fontFamily: 'OpenSans'),
                     ),
                   )),
               body: Summarize()),

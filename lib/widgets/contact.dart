@@ -12,6 +12,7 @@ class Contact extends StatelessWidget {
             child: const Text(
               'Contact Us',
               textAlign: TextAlign.center,
+              style: TextStyle(fontFamily: 'OpenSans'),
             ),
           )),
       body: Column(
@@ -23,7 +24,8 @@ class Contact extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    color: Colors.teal[600]),
+                    color: Colors.teal[600],
+                    fontFamily: 'Montserrat'),
               ),
             ),
             margin: EdgeInsets.only(top: 40),
@@ -31,8 +33,11 @@ class Contact extends StatelessWidget {
           ),
           Container(
             child: Center(
-              child: const Text('Lamachaur,Pokhara-16',
-                  style: TextStyle(fontSize: 20, color: Colors.grey)),
+              child: const Text(
+                'Lamachaur,Pokhara-16',
+                style: TextStyle(
+                    fontSize: 20, color: Colors.grey, fontFamily: 'OpenSans'),
+              ),
             ),
             margin: EdgeInsets.only(top: 20, bottom: 10),
           ),
@@ -40,14 +45,18 @@ class Contact extends StatelessWidget {
             child: Center(
               child: const Text(
                 'Prashant',
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 20, color: Colors.black, fontFamily: 'OpenSans'),
               ),
             ),
           ),
           Container(
             child: Center(
               child: const Text('E-mail:prashantpant809@gmail.com',
-                  style: TextStyle(fontSize: 20, color: Colors.grey)),
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.grey,
+                      fontFamily: 'OpenSans')),
             ),
             margin: EdgeInsets.only(top: 10, bottom: 10),
             padding: EdgeInsets.only(left: 20),
@@ -56,7 +65,8 @@ class Contact extends StatelessWidget {
             child: Center(
               child: const Text(
                 'Eldrin',
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 20, color: Colors.black, fontFamily: 'OpenSans'),
               ),
             ),
           ),
@@ -64,7 +74,8 @@ class Contact extends StatelessWidget {
             child: Center(
               child: const Text(
                 'E-mail:eldrintamu3@gmail.com',
-                style: TextStyle(fontSize: 20, color: Colors.grey),
+                style: TextStyle(
+                    fontSize: 20, color: Colors.grey, fontFamily: 'OpenSans'),
               ),
             ),
             margin: EdgeInsets.only(top: 10, bottom: 5),
@@ -74,14 +85,18 @@ class Contact extends StatelessWidget {
             child: Center(
               child: const Text(
                 'Bidhya',
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 20, color: Colors.black, fontFamily: 'OpenSans'),
               ),
             ),
           ),
           Container(
             child: Center(
               child: const Text('E-mail:bidhyapoudel436@gmail.com',
-                  style: TextStyle(fontSize: 20, color: Colors.grey)),
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.grey,
+                      fontFamily: 'OpenSans')),
             ),
             margin: EdgeInsets.only(top: 10, bottom: 5),
             padding: EdgeInsets.only(left: 25),
@@ -90,7 +105,8 @@ class Contact extends StatelessWidget {
             child: Center(
               child: const Text(
                 'Rasmi',
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 20, color: Colors.black, fontFamily: 'OpenSans'),
               ),
             ),
           ),
@@ -98,7 +114,8 @@ class Contact extends StatelessWidget {
             child: Center(
               child: const Text(
                 'E-mail:bhattarairasmi72@gmail.com',
-                style: TextStyle(fontSize: 20, color: Colors.grey),
+                style: TextStyle(
+                    fontSize: 20, color: Colors.grey, fontFamily: 'OpenSans'),
               ),
             ),
             margin: EdgeInsets.only(top: 10, bottom: 10),
@@ -108,7 +125,8 @@ class Contact extends StatelessWidget {
             child: Center(
               child: const Text(
                 '[Credits]',
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 20, color: Colors.black, fontFamily: 'OpenSans'),
               ),
             ),
           ),
@@ -116,7 +134,8 @@ class Contact extends StatelessWidget {
             child: Center(
               child: const Text(
                 'Supervisior:Er.Nabin Lamichhane',
-                style: TextStyle(fontSize: 20, color: Colors.grey),
+                style: TextStyle(
+                    fontSize: 20, color: Colors.grey, fontFamily: 'OpenSans'),
               ),
             ),
             margin: EdgeInsets.only(top: 10, bottom: 5),

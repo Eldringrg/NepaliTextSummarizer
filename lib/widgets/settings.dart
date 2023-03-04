@@ -25,11 +25,15 @@ class _SettingsState extends State<Settings> {
             child: const Text(
               'Settings',
               textAlign: TextAlign.center,
+              style: TextStyle(fontFamily: 'OpenSans'),
             ),
           )),
       body: Center(
         child: ElevatedButton(
-          child: Text('Switch Theme'),
+          child: Text(
+            'Switch Theme',
+            style: TextStyle(fontFamily: 'OpenSans'),
+          ),
           onPressed: () {
             _toggleTheme();
           },
