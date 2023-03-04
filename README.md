@@ -1,7 +1,7 @@
 
 # Nepal-Text-Summarizer
 
-It is NLP based Project.A simple summarizer App which is developed to extract important points from text and provide summary.
+It is an NLP based Project.A simple summarizer App which is developed to extract important points from Nepali text and provide summary.
 
 ## Features
 
