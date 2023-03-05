@@ -33,6 +33,16 @@ class NavBar extends StatelessWidget {
                 Navigator.of(context).pushNamed(MyApp.routeName);
               }),
           ListTile(
+              leading: Icon(Icons.info_rounded),
+              title: const Text(
+                'About',
+                style: TextStyle(fontFamily: 'OpenSans'),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.of(context).pushNamed(AboutUs.routeName);
+              }),
+          ListTile(
               leading: Icon(Icons.settings),
               title: const Text(
                 'Settings',
@@ -45,22 +55,12 @@ class NavBar extends StatelessWidget {
           ListTile(
               leading: Icon(Icons.contacts),
               title: const Text(
-                'Contact_Us',
+                'Contact',
                 style: TextStyle(fontFamily: 'OpenSans'),
               ),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.of(context).pushNamed(Contact.routeName);
-              }),
-          ListTile(
-              leading: Icon(Icons.info_rounded),
-              title: const Text(
-                'About',
-                style: TextStyle(fontFamily: 'OpenSans'),
-              ),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.of(context).pushNamed(AboutUs.routeName);
               }),
         ],
       ),

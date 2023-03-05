@@ -32,7 +32,7 @@ class _SettingsState extends State<Settings> {
       body: SwitchListTile(
         // This bool value toggles the switch.
         value: light,
-        activeColor: Colors.red,
+        activeColor: Colors.green,
         title: const Text(
           'Switch theme',
           style: TextStyle(fontFamily: 'OpenSans'),
@@ -46,7 +46,7 @@ class _SettingsState extends State<Settings> {
             },
           );
         },
-        secondary: const Icon(Icons.lightbulb_outline),
+        secondary: const Icon(Icons.brightness_4_outlined),
       ),
     );
   }
