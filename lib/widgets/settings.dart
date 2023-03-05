@@ -10,6 +10,7 @@ class Settings extends StatefulWidget {
 }
 
 class _SettingsState extends State<Settings> {
+  bool light = true;
   void _toggleTheme() {
     final settings = Provider.of<ThemeSettings>(context, listen: false);
     settings.toggleTheme();
@@ -21,30 +22,31 @@ class _SettingsState extends State<Settings> {
       appBar: AppBar(
           backgroundColor: Colors.teal[600],
           title: Container(
-            width: 280,
+            width: 200,
             child: const Text(
               'Settings',
               textAlign: TextAlign.center,
               style: TextStyle(fontFamily: 'OpenSans'),
             ),
           )),
-      body: Center(
-        child: ElevatedButton(
-          child: Text(
-            'Switch Theme',
-            style: TextStyle(fontFamily: 'OpenSans'),
-          ),
-          onPressed: () {
-            _toggleTheme();
-          },
-          style: ElevatedButton.styleFrom(
-            primary: Colors.black,
-            padding: EdgeInsets.symmetric(horizontal: 40, vertical: 12),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-          ),
+      body: SwitchListTile(
+        // This bool value toggles the switch.
+        value: light,
+        activeColor: Colors.red,
+        title: const Text(
+          'Switch theme',
+          style: TextStyle(fontFamily: 'OpenSans'),
         ),
+        onChanged: (bool value) {
+          // This is called when the user toggles the switch.
+          setState(
+            () {
+              light = value;
+              _toggleTheme();
+            },
+          );
+        },
+        secondary: const Icon(Icons.lightbulb_outline),
       ),
     );
   }

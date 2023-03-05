@@ -21,7 +21,7 @@ class _SummarizeState extends State<Summarize> {
         Container(
           child: TextField(
             cursorColor: Colors.teal[600],
-            minLines: 28,
+            minLines: 25,
             maxLines: null,
             onChanged: (text) {
               setState(() {
