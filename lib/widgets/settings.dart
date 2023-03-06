@@ -33,6 +33,7 @@ class _SettingsState extends State<Settings> {
         // This bool value toggles the switch.
         value: light,
         activeColor: Colors.green,
+
         title: const Text(
           'Switch theme',
           style: TextStyle(fontFamily: 'OpenSans'),

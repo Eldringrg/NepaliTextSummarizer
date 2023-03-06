@@ -8,11 +8,16 @@ import './screens/summary.dart';
 import './widgets/settings.dart';
 import 'package:provider/provider.dart';
 import './provider/theme_settings.dart';
+import 'package:flutter/services.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
   final isDark = sharedPreferences.getBool('is_dark') ?? false;
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   runApp(MyApp(isDark: isDark));
 }
 
