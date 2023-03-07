@@ -36,38 +36,41 @@ class MyApp extends StatelessWidget {
   static const routeName = '/my-app';
   @override
   Widget build(BuildContext context) {
+    final appBar = AppBar(
+      backgroundColor: Colors.teal[600],
+      title: Container(
+        width: 280,
+        child: const Text(
+          'Nepali Text Summarizer',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontFamily: 'OpenSans'),
+        ),
+      ),
+    );
     return ChangeNotifierProvider(
       create: (context) => ThemeSettings(isDark),
       builder: (context, snapshot) {
         final settings = Provider.of<ThemeSettings>(context);
-        return GestureDetector(
-          onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-          child: MaterialApp(
-            debugShowCheckedModeBanner: false,
-            theme: settings.currentTheme,
-            home: Scaffold(
-                drawer: NavBar(),
-                appBar: AppBar(
-                    backgroundColor: Colors.teal[600],
-                    title: Container(
-                      width: 280,
-                      child: const Text(
-                        'Nepali Text Summarizer',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontFamily: 'OpenSans'),
-                      ),
-                    )),
-                body: Summarize()),
-            routes: {
-              MyApp.routeName: (ctx) => MyApp(
-                    isDark: isDark,
-                  ),
-              Contact.routeName: (ctx) => Contact(),
-              AboutUs.routeName: (ctx) => AboutUs(),
-              Summary.routeName: (ctx) => Summary(),
-              Settings.routeName: (ctx) => Settings(),
-            },
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: settings.currentTheme,
+          home: GestureDetector(
+            onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+            child: Scaffold(
+              drawer: NavBar(),
+              appBar: appBar,
+              body: Summarize(),
+            ),
           ),
+          routes: {
+            MyApp.routeName: (ctx) => MyApp(
+                  isDark: isDark,
+                ),
+            Contact.routeName: (ctx) => Contact(),
+            AboutUs.routeName: (ctx) => AboutUs(),
+            Summary.routeName: (ctx) => Summary(),
+            Settings.routeName: (ctx) => Settings(),
+          },
         );
       },
     );
