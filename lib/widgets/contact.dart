@@ -4,46 +4,47 @@ class Contact extends StatelessWidget {
   static const routeName = '/contact';
   @override
   Widget build(BuildContext context) {
+    final appBar = AppBar(
+        backgroundColor: Colors.teal[600],
+        title: Container(
+          width: 280,
+          child: const Text(
+            'Contact Us',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontFamily: 'OpenSans'),
+          ),
+        ));
     return Scaffold(
-      appBar: AppBar(
-          backgroundColor: Colors.teal[600],
-          title: Container(
-            width: 280,
-            child: const Text(
-              'Contact Us',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontFamily: 'OpenSans'),
-            ),
-          )),
+      appBar: appBar,
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              child: Center(
+        child: Container(
+          height: (MediaQuery.of(context).size.height -
+                  appBar.preferredSize.height -
+                  MediaQuery.of(context).padding.top) *
+              0.8,
+          width: MediaQuery.of(context).size.width,
+          padding: EdgeInsets.all(10),
+          margin: EdgeInsets.only(top: 50),
+          child: Column(
+            children: [
+              Center(
                 child: Text(
                   'BCT MAJOR PROJECT TEAM',
                   style: TextStyle(
-                      fontSize: 25,
+                      fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: Colors.teal[600],
                       fontFamily: 'Montserrat'),
                 ),
               ),
-              margin: EdgeInsets.only(top: 40),
-              padding: EdgeInsets.only(left: 5),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text(
                   'Lamachaur,Pokhara-16',
                   style: TextStyle(
                       fontSize: 20, color: Colors.grey, fontFamily: 'OpenSans'),
                 ),
               ),
-              margin: EdgeInsets.only(top: 20, bottom: 10),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text(
                   'Prashant',
                   style: TextStyle(
@@ -52,20 +53,14 @@ class Contact extends StatelessWidget {
                       fontFamily: 'OpenSans'),
                 ),
               ),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text('E-mail:prashantpant809@gmail.com',
                     style: TextStyle(
                         fontSize: 20,
                         color: Colors.grey,
                         fontFamily: 'OpenSans')),
               ),
-              margin: EdgeInsets.only(top: 10, bottom: 10),
-              padding: EdgeInsets.only(left: 20),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text(
                   'Eldrin',
                   style: TextStyle(
@@ -74,20 +69,14 @@ class Contact extends StatelessWidget {
                       fontFamily: 'OpenSans'),
                 ),
               ),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text(
                   'E-mail:eldrintamu3@gmail.com',
                   style: TextStyle(
                       fontSize: 20, color: Colors.grey, fontFamily: 'OpenSans'),
                 ),
               ),
-              margin: EdgeInsets.only(top: 10, bottom: 5),
-              padding: EdgeInsets.only(right: 28),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text(
                   'Bidhya',
                   style: TextStyle(
@@ -96,20 +85,14 @@ class Contact extends StatelessWidget {
                       fontFamily: 'OpenSans'),
                 ),
               ),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text('E-mail:bidhyapoudel436@gmail.com',
                     style: TextStyle(
                         fontSize: 20,
                         color: Colors.grey,
                         fontFamily: 'OpenSans')),
               ),
-              margin: EdgeInsets.only(top: 10, bottom: 5),
-              padding: EdgeInsets.only(left: 25),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text(
                   'Rasmi',
                   style: TextStyle(
@@ -118,20 +101,14 @@ class Contact extends StatelessWidget {
                       fontFamily: 'OpenSans'),
                 ),
               ),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text(
                   'E-mail:bhattarairasmi72@gmail.com',
                   style: TextStyle(
                       fontSize: 20, color: Colors.grey, fontFamily: 'OpenSans'),
                 ),
               ),
-              margin: EdgeInsets.only(top: 10, bottom: 10),
-              padding: EdgeInsets.only(left: 27),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text(
                   '[Credits]',
                   style: TextStyle(
@@ -140,18 +117,15 @@ class Contact extends StatelessWidget {
                       fontFamily: 'OpenSans'),
                 ),
               ),
-            ),
-            Container(
-              child: Center(
+              Center(
                 child: const Text(
                   'Supervisior:Er.Nabin Lamichhane',
                   style: TextStyle(
                       fontSize: 20, color: Colors.grey, fontFamily: 'OpenSans'),
                 ),
               ),
-              margin: EdgeInsets.only(top: 10, bottom: 5),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

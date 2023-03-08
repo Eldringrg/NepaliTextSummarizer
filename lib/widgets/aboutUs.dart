@@ -4,23 +4,28 @@ class AboutUs extends StatelessWidget {
   static const routeName = '/aboutUs';
   @override
   Widget build(BuildContext context) {
+    final appBar = AppBar(
+        backgroundColor: Colors.teal[600],
+        title: Container(
+          width: 280,
+          child: const Text(
+            'About ',
+            textAlign: TextAlign.center,
+            style: TextStyle(fontFamily: 'OpenSans'),
+          ),
+        ));
     return Scaffold(
-        appBar: AppBar(
-            backgroundColor: Colors.teal[600],
-            title: Container(
-              width: 280,
-              child: const Text(
-                'About ',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontFamily: 'OpenSans'),
-              ),
-            )),
+        appBar: appBar,
         body: SingleChildScrollView(
             child: Column(
           children: <Widget>[
             Container(
-                margin:
-                    EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 20),
+                height: (MediaQuery.of(context).size.height -
+                        appBar.preferredSize.height -
+                        MediaQuery.of(context).padding.top) *
+                    0.7,
+                width: MediaQuery.of(context).size.width * 0.9,
+                margin: EdgeInsets.only(top: 20, left: 20, right: 20),
                 child: RichText(
                     textAlign: TextAlign.justify,
                     text: TextSpan(children: [
@@ -43,8 +48,8 @@ class AboutUs extends StatelessWidget {
                       ),
                     ]))),
             Container(
-                margin:
-                    EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 20),
+                height: MediaQuery.of(context).size.height * 0.2,
+                width: MediaQuery.of(context).size.width * 0.9,
                 child: RichText(
                     textAlign: TextAlign.justify,
                     text: TextSpan(
