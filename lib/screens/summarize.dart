@@ -34,6 +34,7 @@ class _SummarizeState extends State<Summarize> {
                   url = 'http://10.0.2.2:5000/api?query=' + text.toString();
                 },
                 keyboardType: TextInputType.multiline,
+                textInputAction: TextInputAction.done,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20.0),
