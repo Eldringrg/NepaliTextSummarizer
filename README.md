@@ -34,7 +34,15 @@ Install my-project with flutter
   flutter pub upgrade
   flutter run
 ```
-    
+## Homepage
+![Screenshot_1712861633](https://github.com/Eldringrg/NepaliTextSummarizer/assets/58216383/69731e6a-0ffb-497d-a1d6-fe5d57988933)
+
+## Drawer
+![Screenshot_1712861651](https://github.com/Eldringrg/NepaliTextSummarizer/assets/58216383/515df5ae-390e-4848-bb03-8087360ba9f4)
+
+## Settings
+![Screenshot_1712861655](https://github.com/Eldringrg/NepaliTextSummarizer/assets/58216383/ee1ac2e3-8019-454e-bbd5-94502fdd3aa3)
+  
 ## Badges
 
 Add badges from somewhere like: [shields.io](https://shields.io/)
